@@ -18,4 +18,7 @@ The backend is powered by **Supabase**. You can find the table definitions in `s
 
   **IN ORDER FOR THE PROJECT TO WORK U HAVE TO USE YOUR OWN KEYS FOR THE DATABASE**
 
+  <img width="1919" height="914" alt="image" src="https://github.com/user-attachments/assets/b5bf0fb3-bcd5-4430-8bf4-c550070bce69" />
+
+
   
