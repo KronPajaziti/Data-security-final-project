@@ -1,6 +1,6 @@
 // --- konfigurimi ---
-const SUPABASE_URL = 'https://xcfwnvhtqupshyideuko.supabase.co';
- const SUPABASE_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InhjZndudmh0cXVwc2h5aWRldWtvIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzgyNTA0MTYsImV4cCI6MjA5MzgyNjQxNn0.HTV63yGU4EH7QvubJFY52Vwv2s04z6-GVmKiD0DnRtM';
+const SUPABASE_URL = 'SUPABASE_UR';
+ const SUPABASE_KEY = 'SUPABASE_KEY';
 const supabaseClient = supabase.createClient(SUPABASE_URL, SUPABASE_KEY);
 
 let userKeyPair = null;
