@@ -17,7 +17,8 @@ The backend is powered by **Supabase**. You can find the table definitions in `s
 - **Identity Sync**: RSA keys are recovered using the login password.
 
   **IN ORDER FOR THE PROJECT TO WORK YOU HAVE TO USE YOUR OWN KEYS FOR THE DATABASE**.
-  **IF U WANT TO TRY THE PROJECT USE THIS LINK:**https://data-security-univeristy-of-pristina.netlify.app/
+  **IF U WANT TO TRY THE PROJECT USE THIS LINK**
+  https://data-security-univeristy-of-pristina.netlify.app/
 
   
   
