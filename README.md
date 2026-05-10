@@ -16,7 +16,7 @@ The backend is powered by **Supabase**. You can find the table definitions in `s
 - **Zero-Knowledge**: The server never sees the user's password or unencrypted keys.
 - **Identity Sync**: RSA keys are recovered using the login password.
 
-  **IN ORDER FOR THE PROJECT TO WORK YOU HAVE TO USE YOUR OWN KEYS FOR THE DATABASE**
+
  ### If you want to try the project use this link:
 - https://data-security-univeristy-of-pristina.netlify.app/
 
