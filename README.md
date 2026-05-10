@@ -7,9 +7,7 @@ A zero-knowledge file vault using **AES-GCM** and **RSA-OAEP** encryption.
 ## Database Structure
 The backend is powered by **Supabase**. You can find the table definitions in `schema.sql`.
 
-### Tables:
-- **user_identities**: Stores encrypted RSA private keys (PBKDF2 derived).
-- **vault_files**: Stores encrypted file data and wrapped AES keys.
+
 
 ## Security Features
 - **End-to-End Encryption**: Files are encrypted in the browser.
