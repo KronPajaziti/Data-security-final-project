@@ -1,1 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SecuraVault | Professional Edition</title>
+    
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
+<div class="container">
+    <div id="authSection" class="card" style="max-width: 400px; margin: 0 auto;">
+        <h2>Vault Access</h2>
+        <input type="text" id="email" placeholder="Email">
+        <input type="password" id="password" placeholder="Password">
+        <button onclick="handleAuth('login')">Login & Unlock</button>
+        <button class="btn-secondary" onclick="handleAuth('signup')">Create Account</button>
+    </div>
+
+    <div id="mainApp" class="hidden">
+        <div class="card">
+            <h2 id="statusTitle">Checking Identity...</h2>
+            <div id="setupKeys" class="hidden">
+                <p>No encryption keys found. Generate them now to secure your files with your password.</p>
+                <button onclick="createNewIdentity()">Generate & Sync Identity</button>
+            </div>
+            <div id="keysActive" class="hidden" style="color: #10b981;">
+                ✓ Secure Identity Active (Locked by Password)
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>Upload to Cloud</h2>
+            <input type="file" id="fileInput">
+            <button id="uploadBtn" onclick="encryptAndUpload()" disabled>Encrypt & Upload</button>
+            <div id="uploadStatus" class="status-msg"></div>
+        </div>
+
+        <div class="card">
+            <h2>Your Secure Cloud</h2>
+            <div id="fileList"></div>
+        </div>
+        
+        <div class="card">
+            <h2>Shared With Me</h2>
+            <div id="sharedFileList"></div>
+        </div>
+
+        <div class="card">
+            <h2>Sent Files</h2>
+            <div id="sentFileList"></div>
+        </div>
+
+        <button class="btn-secondary" style="width: auto;" onclick="logout()">Logout</button>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
